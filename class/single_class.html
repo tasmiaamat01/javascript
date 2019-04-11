@@ -1,0 +1,31 @@
+<!-- Single class -->
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+</head>
+
+<body>
+
+        <div class="example">First class="example".</div>
+
+        <div class="example">Second class="example".</div>
+        <br>
+        <button type="button" class="btn btn-success" onclick="myFunction()">Success</button>
+        <br>
+        <br>
+        <p><strong>Note:</strong> Class can be used multiple time.</p>
+
+        <script>
+                function myFunction() {
+                        var value = document.getElementsByClassName("example");
+                        value[1].innerHTML = "Hello World!";
+                }
+        </script>
+
+</body>
+
+</html>

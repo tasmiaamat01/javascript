@@ -1,0 +1,32 @@
+<html>
+
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="primary">
+                <h1>First Class</h1>
+                <button typr="button" class="btn btn-secondary" onclick="myFunction()">First Primary</button>
+                <button typr="button" class="btn btn-secondary" onclick="myFunction()">Clone Primary</button>
+        </div>
+        <div class="primary">
+                <h2>Second Class</h2>
+                <button type="button" class="btn btn-primary" onclick="myFunction()">Secend Primary</button>
+        </div>
+        <div class="info">
+                <h3>Third Class</h3>
+                <button type="button" class="btn btn-info" onclick="myFunction()">Information</button>
+        </div>
+        <script>
+                function myFunction() {
+                        var value = document.getElementsByClassName("info");
+                        value[0].innerHTML = "Event is Working!";
+                }
+        </script>
+
+</body>
+
+</html>
