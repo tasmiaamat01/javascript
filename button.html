@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Button</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<button id="add">ADD</button>
+	<button id="list" style="display: none">LIST</button>
+	<button id="view" style="display: none">VIEW</button>
+
+	<script>
+		$(document).on('click','#add', function(){
+			$('#add').hide();
+			$('#list').show();
+		});
+
+		$(document).on('click','#list', function(){
+			$('#list').hide();
+			$('#view').show();
+		});
+
+		$(document).on('click','#view', function(){
+			$('#view').hide();
+			$('#add').show();
+		});
+	</script>
+</body>
+</html>

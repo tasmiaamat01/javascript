@@ -1,0 +1,67 @@
+<html>
+        <head>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                        <script>
+                                function myFunction(){
+                                        document.getElementById('ass').innerHTML = 'Changed';
+                                }
+                        </script>
+        </head>
+        <body>
+                <div>
+                        <h2>My First JavaScript</h2>
+                        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                                Click me to display Date and Time.</button>
+                                <p id="demo"></p>
+                        </button>
+                </div>
+                <div>
+                        <button type="button" onclick="document.getElementById('app').innerHTML = Date()">
+                                Do Once more
+                        </button>
+                        <p id="app"></p>
+                </div>
+                <div>
+                        <h4>Its Less Interesting</h4>
+                        <button type="button" onclick="document.getElementById('less').innerHTML = Date()">
+                                Lets's See!What Happen :(
+                        </button>
+                        <p id="less"></p>
+                </div>
+                <div>
+                        <h1 id="id">JavaScript Can change its content.</h1>
+                        <button type="button" onclick="document.getElementById('id').innerHTML = 'Hello JavaScript'">
+                        <!--  <button type="button" onclick="document.getElementById('id').style.fontSize = '50px'"> -->
+                                hehe
+                        </button>
+                </div>
+                <br>
+                <div>
+                        <button type="button" id="success" class="btn btn-success">Success</button>
+                        <button type="button" id="warning" class="btn btn-warning" Style="display: None">Warning</button>
+                        <button type="button" id="danger" class="btn btn-danger" Style="display: None">Danger</button>
+                        <script>
+                                $(document).on('click','#success',function(){
+                                        $('#success').hide();
+                                        $('#warning').show();
+                                });
+                                $(document).on('click','#warning',function(){
+                                        $('#warning').hide();
+                                        $('#danger').show();
+                                });
+                                $(document).on('click','#danger',function(){
+                                        $('#danger').hide();
+                                        $('#success').show();
+                                });
+                        </script>
+                        <br>
+                        <div>
+                                <br>
+                                <p id="ass">Shift in DangerZone</p>
+                        <button type="button"  class="btn btn-danger" onclick="myFunction()">Danger</button>
+                        </div>
+                </div>
+        </body>
+</html>
