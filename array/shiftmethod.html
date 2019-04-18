@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+</head>
+<body>
+        <!-- Shift Method -->
+        <div>
+                <p id="demo1"></p>
+                <p id="demo2"></p>
+                <h4>Array Shift</h4>
+                <script>
+                        var alphabet = ['a','v','c'];
+                        document.getElementById('demo1').innerHTML= alphabet;
+                        alphabet.shift();
+                        document.getElementById('demo2').innerHTML= alphabet;
+                        document.getElementById('demo2').innerHTML= alphabet.shift();
+                </script>
+        </div>
+        <!-- UnShift Method -->
+        <div>
+                <p id="demo3"></p>
+                <p id="demo4"></p>
+                <h4><b>Unshit Methis</b></h4>
+                <h6>Without shift it adds</h6>
+                <button type="button" class="btn btn-danger" onclick="myFunction()">Try it</button>
+                <script>
+                        var alphabet = ['a', 'v', 'c'];
+                        alphabet.unshift();
+                        document.getElementById('demo3').innerHTML=alphabet;
+
+                        ​function myFunction() {
+                                        fruits.unshift("z");
+                                        document.getElementById("demo3").innerHTML = alphabet;
+                                }
+                </script>
+        </div>
+</body>
+</html>
