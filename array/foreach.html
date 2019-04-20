@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Each</title>
+</head>
+<body>
+	<div>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var alphabets = ['a','b','c','x','y','z'];
+			var  text;
+			text = "<ul>";
+			alphabets.forEach(myFunction);
+			text += "</ul>";
+			document.getElementById('demo').innerHTML=text;
+
+			function myFunction(x){
+				text += "<li>"+x+"</li>";
+			}
+		</script>
+	</div>
+</body>
+</html>
+<p id="demo"></p>
+
