@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Array Splice</title>
+</head>
+<body>
+	<div>
+		<p id="demo"></p>
+		<button typ="button" class="btn btn-success" onclick="myFunction()">Success</button>
+		<script type="text/javascript">
+			var alphabets = ['a','b','c','x','y','z'];
+			document.getElementById('demo').innerHTML=alphabets;
+			function myFunction(){
+				alphabets.splice(0,1);
+				document.getElementById('demo').innerHTML=alphabets;
+			}
+		</script>
+	</div>
+</body>
+</html>
