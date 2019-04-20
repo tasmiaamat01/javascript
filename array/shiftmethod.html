@@ -24,21 +24,25 @@
         </div>
         <!-- UnShift Method -->
         <div>
-                <p id="demo3"></p>
-                <p id="demo4"></p>
-                <h4><b>Unshit Methis</b></h4>
-                <h6>Without shift it adds</h6>
-                <button type="button" class="btn btn-danger" onclick="myFunction()">Try it</button>
-                <script>
-                        var alphabet = ['a', 'v', 'c'];
-                        alphabet.unshift();
-                        document.getElementById('demo3').innerHTML=alphabet;
+                <h2>JavaScript Array Methods</h2> 
 
-                        ​function myFunction() {
-                                        fruits.unshift("z");
-                                        document.getElementById("demo3").innerHTML = alphabet;
-                                }
-                </script>
+                <h2>unshift()</h2>
+
+                <p>The unshift() method adds new elements to the beginning of an array.</p>
+
+                        <button class="bt btn-success" onclick="myFunction()">Try it</button>
+
+                <p id="demo"></p>
+
+                <script>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        document.getElementById("demo").innerHTML = fruits;
+
+                        function myFunction() {
+                          fruits.unshift("Lemon");
+                          document.getElementById("demo").innerHTML = fruits;
+                        }
+                </script> 
         </div>
 </body>
 </html>
