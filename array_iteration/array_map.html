@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+	<script>
+		var numbers = [45, 4, 9, 16, 25];
+		var number = numbers.map(myFunction)
+		numbers.forEach(myFunction);
+		document.getElementById("demo").innerHTML = number;
+
+		function myFunction(value) {
+		  return value*2;
+		}
+	</script>
+	</div>
+</body>
+</html>
