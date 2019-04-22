@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Array Filter</title>
 </head>
 <body>
-	s
+	<div>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<button class="btn btn-primary" onclick="myFunction()">Primary</button>
+		<script type="text/javascript">
+			var array = [50,60,70,5,10,25];
+			document.getElementById('demo1').innerHTML=array;
+			var str=array.filter(myFunction);
+
+			function myFunction(value){
+				document.getElementById('demo2').innerHTML=str;
+				return value > 50;
+			}
+		</script>
+	</div>
 </body>
 </html>
