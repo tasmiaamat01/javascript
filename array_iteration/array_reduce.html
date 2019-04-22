@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Array Reduce</title>
+</head>
+<body>
+	<div>
+		<p id="demo"></p>
+		<!-- <button class="btn btn-success" onclick="myFunction()">Success</button> -->
+		<script type="text/javascript">
+			//var array = [50,60,70,5,10,25];
+			//document.getElementById('demo').innerHTML=array;
+			//var reduce  = array.reduce(myFunction);
+			//function myFunction(total,value){
+				//return total + value;
+			//} 
+			var array = [50,60,70,5,10,25];
+			var str=array.reduce(myFunction);
+			document.getElementById('demo').innerHTML=str;
+
+			function myFunction(total,value){
+				return total+value
+			}
+		</script>
+	</div>
+</body>
+</html>
