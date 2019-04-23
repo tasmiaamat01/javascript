@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+
+</head>
+
+<body>
+        <div style="width: 50%">
+                <form id="form">
+                        <input type="text" name="email" placeholder="email">
+                        <input type="text" name="name" placeholder="name">
+                        <button type="button" id="submit">Submit</button>
+                </form>
+        </div>
+        <div style="width: 50%" id="list">
+        </div>
+
+        <script>
+                let array = [],
+                        element = document.getElementById('list');
+
+                document.getElementById('submit').addEventListener('click', function () {
+                        let form = document.querySelector('form')
+                        let data = []
+
+                        for (let i = 0; i < form.elements.length; i++) {
+                                if (form.elements[i].value) {
+                                        data[form.elements[i].name] = form.elements[i].value
+                                }
+                        }
+
+                        array.push(data)
+
+                        generateList();
+                })
+
+                function generateList() {
+                        // Create the list element:
+                        let list = document.createElement('ul');
+
+                        for (let i = 0; i < array.length; i++) {
+                                // Create the list item:
+                                let item = document.createElement('li')
+
+                                // Set its contents:
+                                item.appendChild(document.createTextNode('Name: ' + array[i]['name']));
+                                item.appendChild(document.createElement('br'));
+                                item.appendChild(document.createTextNode('Email: ' + array[i]['email']));
+
+                                list.appendChild(item);
+
+                        }
+
+                        element.appendChild(list)
+                }
+
+        </script>
+</body>
+
+</html>

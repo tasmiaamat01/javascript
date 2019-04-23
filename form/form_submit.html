@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+</head>
+<body>
+<!--         <form id ="submit" action="">
+                <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" placeholder=" Enter Username" aria-label="Username"
+                                aria-describedby="basic-addon1" value="">
+                </div>
+                <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter Email" aria-label="Email"
+                                aria-describedby="basic-addon1">
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id="myForm" onclick="myFunction()">Submit</button>
+        </form>
+
+                <script>
+                        function myFunction(){
+                                document.getElementById("myForm").submit();
+                                alert();
+                                var data = document.getElementById('submit');
+                                //console.log(data);
+                        }
+                </script><br>
+                <h6>tasmia.amat01@gmail.com</h6> -->
+
+        <form action="#" method="post" id="form_id">
+                <div>
+                        <!-- <p id="sample"></p> -->
+                        <div>
+                                <input type="text" id="form_id" name="login" class="form-control" placeholder=" Enter Username" value=""><br>
+                        </div>
+                        <button type="button" class="btn btn-success" onclick="myFunction()">Try It</button>
+                </div> 
+        </form>
+                <script>
+                        function myFunction(){
+                                var name = document.getElementById("form_id").elements[0].value;
+                                console.log(name);
+                                /* var data = document.getElementById("form_id");
+                                console.log(data.elements); */
+                                document.getElementById("form_id").innerHTML = name;
+                        }
+                        
+                </script>
+
+<!--         <div class="container">
+                <div class="main">
+                        <form action="#" method="post" name="form_name" id="form_id" class="form_class">
+                                <h2>Javascript Form Submit Example</h2>
+                                <label>Name :</label>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder=" Enter Username">
+                                <input type="button" name="submit_id" class="btn-btn-primary" id="btn_id" value="Submit by Id"
+                                        onclick="submit_by_id()" />
+                        </form>
+                        <script>
+                                function submit_by_id() {
+                                        var name = document.getElementById("name").value;
+                                        
+                                                document.getElementById("form_id").submit(); //form submission
+                                        
+                                        
+                                }
+                        </script>
+                </div>
+        </div> -->
+</body>
+</html>
