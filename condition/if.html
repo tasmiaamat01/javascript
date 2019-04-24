@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>If Condition</title>
+</head>
+<body>
+	<div>
+		<p id="demo"></p>
+		<button type="button" onclick="myFunction()">Success</button>
+		<script type="text/javascript">
+			var hours= new Date().getHours(); 
+			function myFunction(){
+			if(hours<11){
+				document.getElementById('demo').innerHTML=hours;
+			}
+		}
+
+		</script>
+	</div>
+</body>
+</html>
