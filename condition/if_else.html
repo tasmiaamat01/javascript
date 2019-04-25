@@ -10,9 +10,10 @@
 		<script type="text/javascript">
 			var hours= new Date().getHours(); 
 			function myFunction(){
-			if(hours<11){
+			if(hours<7){
 				document.getElementById('demo').innerHTML=hours;
-			}
+			}else
+			document.getElementById('demo').innerHTML=new Date();
 		}
 
 		</script>
