@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Variable</title>
+</head>
+<body>
+	<div>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			//Global variable
+			var myCar="BMW";
+			function myFunction(){
+					//local
+				//var myCar="BMW";
+				document.getElementById('demo').innerHTML=myCar;
+			}
+			myFunction();
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			var cars = ['BMW','TOYOTO','VOLVO'];
+			document.getElementById('demo').innerHTML=myFunction(cars);
+			function myFunction(myArray) {
+				return myArray.constructor === Array;
+			}
+		</script>
+		
+	</div>
+</body>
+</html>

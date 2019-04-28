@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
         <head>
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -7,7 +7,7 @@
 <body>
         <div>
                 <p id="demo"></p>
-        <script>
+<!--    <script>
                 var fruits,text;
                 fruits = ["apple","banana","orange","watermillion"];
                 text = "<ul>";
@@ -17,15 +17,25 @@
                 function myFunction(value){
                         text = "<ul>"+ value +"</ul>"
                 }
+        </script> -->
+        <script>
+            var txt = "";
+            var numbers = [45, 4, 9, 16, 25];
+            numbers.forEach(myFunction);
+            document.getElementById("demo").innerHTML = txt;
+
+            function myFunction(value) {
+              txt = txt + value + "<br>"; 
+            }
         </script>
-        </div>
+    </div>
 </body>
 </html>
 <!--         <div>
                 <p id="temo"></p>
                 <script>
                         var fruits,text,i,flew,pext;
-                        fruits=["apple", "banana", "orange", "watermillion"];
+      s                 fruits=["apple", "banana", "orange", "watermillion"];
                         flew = fruits.length;
                         names = ["Tasmia","Amat","Eva"];
                         text = "<ul>";
